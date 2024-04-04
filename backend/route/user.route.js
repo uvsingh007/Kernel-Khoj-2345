@@ -55,7 +55,6 @@ userRouter.post('/login',async(req,res)=>{
                 }else{
                     const access_token=jwt.sign({userID:user._id,email:email},'namrata',{expiresIn:60*60*24})
 
-                    redis.setex(email, 86400, access_token);//use setex and in this if two obj has same key then previous obj gets replaced with new obj
                     res.status(200).json({msg:'login successfull',access_token,user})
                 }
             })
