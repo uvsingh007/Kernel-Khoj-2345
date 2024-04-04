@@ -183,7 +183,7 @@ function validatePassword(password) {
 
 
 
-let url='https://kernel-khoj-2345-hjv8.onrender.com/'
+let url='https://kernel-khoj-2345-hjv8.onrender.com'
 
 signupBtn.addEventListener('click',(e)=>{
   console.log("hey");
