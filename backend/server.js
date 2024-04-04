@@ -17,7 +17,9 @@ app.use('/users',userRouter)
 const server = http.createServer(app);
 // $$$$$$$$$$$$$$$$$$444
 
-
+app.get("/",(req,res)=>{
+    res.send({"msg":"welcome to homepage"})
+})
 // $$$$$$$$$$$$$$$$$4
 
 const io = socketio(server);
