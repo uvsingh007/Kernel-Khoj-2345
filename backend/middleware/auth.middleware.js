@@ -1,5 +1,4 @@
-const jwt = require('jsonwebtoken');
-//const { redis } = require('../controller/redis.controller');
+const jwt = require('jsonwebtoken')
 
 const auth = async (req, res, next) => {
     const token = req.headers.authorization?.split(" ")[1];
@@ -11,10 +10,6 @@ const auth = async (req, res, next) => {
         const decoded = jwt.verify(token, 'namrata');
         if (!decoded) {
             return res.status(401).json({ msg: 'Invalid token' });
-        }
-        const redisToken = await redis.get(decoded.email);
-        if (redisToken !== token) {
-            return res.status(401).json({ msg: 'Token not found in Redis. Please login again.' });
         }
 
         next();

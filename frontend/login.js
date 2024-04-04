@@ -236,7 +236,7 @@ siginBtn.addEventListener('click',()=>{
             localStorage.setItem('name',data.user.name);
             
             setTimeout(() => {
-              location.href= '../public/landing.html';
+              location.href= 'landing.html';
             }, 2000);
             
             // frontend\public\landing.html
