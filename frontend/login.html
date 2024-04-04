@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <input id="firstname-signup" type="text" placeholder="UserName" required>
+                <!-- <input id="lastname-signup" type="text" placeholder="Last Name" required> -->
+                <input id="email-signup" type="email" placeholder="Email" required>
+                <input id="password-signup" type="password" placeholder="Password" required>
+            <button class="btnsign" id="signup-btn">
+                Sign Up
+            </button>
+             
+             
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <input id="logindata" type="email" placeholder="Email/Phone">
+                <input id ="loginpassword" type="password" placeholder="Password">
+                <a class="btnsign" id="loginbtnSign" >Sign In</a>
+            
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden btnsign" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Welcome, Friend!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden btnsign" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast success hiddentoast">
+        <div class="toast-message">
+            <span class="toast-text"></span>
+            <button class="toast-close">X</button>
+        </div>
+    </div>
+</body>
+<script src="login.js"></script>
+</html>
