@@ -491,7 +491,7 @@ input[type="file"] {
 .container-room .left-cont {
   background-image: linear-gradient(to right, #3d0a66, #1f1453, #064656);
   /* background: linear-gradient(to bottom,#38b000,#00509d); */
-  height: 100vh;
+  min-height: 100vh;
   padding: 50px;
   text-align: center;
   position: relative;
@@ -870,7 +870,7 @@ input[type="file"] {
   width: 600px;
   border-radius: 5%;
   background-color: #ffffff;
-  height: 100vh;
+  min-height: 100vh;
   /* Track */
   /* Handle */
   /* Handle on hover */
