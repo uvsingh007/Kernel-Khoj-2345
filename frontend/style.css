@@ -474,7 +474,6 @@ input[type="file"] {
   bottom: 0;
   display: flex;
   background-color: #ecf0f1;
-
 }
 .container-room ::-webkit-scrollbar {
   width: 10px;
@@ -496,6 +495,7 @@ input[type="file"] {
   text-align: center;
   position: relative;
   /* #38b000,#00509d */
+  width: 75%;
 }
 .container-room .left-cont .whiteboard-cont {
   height: 85vh;
@@ -867,7 +867,7 @@ input[type="file"] {
   outline: none;
 }
 .container-room .right-cont {
-  width: 600px;
+  width: 25%;
   border-radius: 5%;
   background-color: #ffffff;
   min-height: 100vh;
