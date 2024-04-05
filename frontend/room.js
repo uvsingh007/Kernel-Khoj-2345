@@ -1,4 +1,4 @@
-const socket=io("https://hack-sorcerer.onrender.com/",{transports:["websocket"]})
+const socket=io("https://kernel-khoj-2345-hjv8.onrender.com/",{transports:["websocket"]})
 const myvideo = document.getElementById("vd1");
 const roomid = params.get("room");
 let username;
