@@ -1,4 +1,4 @@
-const socket=io("kernel-khoj-2345-production.up.railway.app/",{transports:["websocket"]})
+const socket=io("https://kernel-khoj-2345-production.up.railway.app/",{transports:["websocket"]})
 const myvideo = document.getElementById("vd1");
 const roomid = params.get("room");
 let username;
