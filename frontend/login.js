@@ -183,7 +183,7 @@ function validatePassword(password) {
 
 
 
-let url='kernel-khoj-2345-production.up.railway.app'
+let url='https://kernel-khoj-2345-production.up.railway.app'
 
 signupBtn.addEventListener('click',(e)=>{
   console.log("hey");
