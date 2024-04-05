@@ -3,7 +3,7 @@ const {UserModel}=require('../model/user.model')
 const verify=async (req,res,next)=>{
     const token=res.headers.authorization?.split(" ")[1]
     try{
-        const decoded=await jwt.verify(token,'yuvraj')
+        const decoded=await jwt.verify(token,'khalid')
         if(decoded)
         {
             const user=await UserModel.findOne({email:decoded.email})
