@@ -254,6 +254,7 @@ socket.on('user count', count => {
 })
 
 let peerConnection;
+// fuck this shit
 
 function handleGetUserMediaError(e) {
     switch (e.name) {
