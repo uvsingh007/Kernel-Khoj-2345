@@ -254,7 +254,6 @@ socket.on('user count', count => {
 })
 
 let peerConnection;
-// fuck this shit
 
 function handleGetUserMediaError(e) {
     switch (e.name) {
@@ -636,6 +635,7 @@ socket.on('file upload', (fileData, sendername, time) => {
     console.log("HEllo")
     chatRoom.scrollTop = chatRoom.scrollHeight;
     // chatRoom.innerHTML += `abbsvvs`
+
     chatRoom.innerHTML += `<div class="message">
     <div class="info">
         <div class="username">${sendername}</div>
@@ -651,7 +651,8 @@ socket.on('message', (msg, sendername, time) => {
     chatRoom.scrollTop = chatRoom.scrollHeight;
     chatRoom.innerHTML += `<div class="message">
     <div class="info">
-        <div class="username">${sendername}</div> :
+        <div class="username">${sendername}</div>
+        <div class="time">${time}</div>
     </div>
     <div class="content">
         ${msg}
@@ -749,7 +750,7 @@ videoButt.addEventListener('click', () => {
         }
         videoButt.innerHTML = `<i class="fas fa-video"></i>`;
         videoAllowed = 1;
-        videoButt.style.backgroundColor = "#25afb8";
+        videoButt.style.backgroundColor = "#4ECCA3";
         if (mystream) {
             mystream.getTracks().forEach(track => {
                 if (track.kind === 'video')
@@ -795,7 +796,7 @@ audioButt.addEventListener('click', () => {
         }
         audioButt.innerHTML = `<i class="fas fa-microphone"></i>`;
         audioAllowed = 1;
-        audioButt.style.backgroundColor = "#25afb8";
+        audioButt.style.backgroundColor = "#4ECCA3";
         if (mystream) {
             mystream.getTracks().forEach(track => {
                 if (track.kind === 'audio')
@@ -845,7 +846,7 @@ whiteboardButt.addEventListener('click', () => {
 })
 
 cutCall.addEventListener('click', () => {
-    location.href = 'landing.html';
+    location.href = '../public/landing.html';
 })
 // frontend\public\index.html
 
@@ -1028,9 +1029,9 @@ socket.on("newUserNameJoined", (participantsname)=>{
 })
 
 const userImageinPart = localStorage.getItem("userImage")
-socket.on("update-avtar",(userImageinPart)=>{
-    img.src=userImageinPart;
-})
+// socket.on("update-avtar",(userImageinPart)=>{
+//     img.src=userImageinPart;
+// })
 //avtar
 // socket.emit('update avatar', localStorage.getItem("userImage"));
 
